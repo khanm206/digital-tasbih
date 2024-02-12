@@ -42,10 +42,18 @@ subhanAllahFullTasbih.innerText = subhanAllahFullValue;
 subhanAllahDecreBtn.addEventListener('click', function () {
     subhanAllahValue -= 1;
     if (subhanAllahValue < 0) {
-        subhanAllahValue = 0;
-        return alert("You can't decrement anymore!")
+        subhanAllahFullValue -= 1;
+        subhanAllahValue = 32;
+        if(subhanAllahFullValue < 0){
+            subhanAllahValue = 0;
+            subhanAllahFullValue = 0;
+            return alert("You can't decrement anymore!")
+        }
+        
     }
+ 
     subhanAllahDisplay.innerText = subhanAllahValue;
+    subhanAllahFullTasbih.innerText = subhanAllahFullValue;
 });
 
 subhanAllahResetBtn.addEventListener('click', function () {
@@ -71,10 +79,17 @@ subhanAllahFullTasbih.innerText = subhanAllahFullValue;
 alhamdulillahDecreBtn.addEventListener('click', function () {
     alhamdulillahValue -= 1;
     if (alhamdulillahValue < 0) {
-        alhamdulillahValue = 0;
-        return alert("You can't decrement anymore!")
+        alhamdulillahFullValue -= 1;
+        alhamdulillahValue = 32;
+        if(alhamdulillahFullValue < 0){
+            alhamdulillahValue = 0;
+            alhamdulillahFullValue = 0;
+            return alert("You can't decrement anymore!")
+        }
+
     }
     alhamdulillahDisplay.innerText = alhamdulillahValue;
+    alhamdulillahFullTasbih.innerText = alhamdulillahFullValue;
 });
 
 alhamdulillahResetBtn.addEventListener('click', function () {
@@ -101,10 +116,17 @@ allahuakbarFullTasbih.innerText = allahuakbarFullValue;
 allahuakbarDecreBtn.addEventListener('click', function () {
     allahuakbarValue -= 1;
     if (allahuakbarValue < 0) {
-        allahuakbarValue = 0;
-        return alert("You can't decrement anymore!")
+        allahuakbarFullValue -= 1;
+        allahuakbarValue = 33;
+        if(allahuakbarFullValue < 0){
+            allahuakbarFullValue = 0;
+            allahuakbarValue = 0;
+            return alert("You can't decrement anymore!")
+        }
+
     }
     allahuakbarDisplay.innerText = allahuakbarValue;
+    allahuakbarFullTasbih.innerText = allahuakbarFullValue;
 });
 
 allahuakbarResetBtn.addEventListener('click', function () {
