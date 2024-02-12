@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <link rel="shortcut icon" href="asset/tasbih.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<main class="mx-[2rem] lg:my-[4rem] md:my-[4rem] my-[2rem] text-center">
+    <section class="grid justify-center mb-20">
+        <div class=" bg-[url('/asset/tasbih.png')] bg-contain h-16 lg:h-20"></div>
+        <h1 class="bg-gradient-to-r from-blue-400 to-green-500 text-transparent bg-clip-text w-fit font-extrabold text-[4rem] lg:text-[6rem] text-center">
+            DIGITAL TASBIH</h1>
+            <div class=" bg-[url('/asset/tasbih.png')] bg-contain h-16 lg:h-20"></div>
+    </section>
+
+    <section class="flex justify-around flex-wrap gap-6">
+        <!-- SubhanAllah -->
+<div id="subhanAllah" class="text-center h-auto w-auto  shadow-2xl rounded-[1rem] p-5">
+    <h1 class="text-[3rem] font-bold">Subhan Allah</h1>
+    <br>
+<div class="bg-slate-200 rounded-[1rem] shadow-inner border-4 border-gray-300">
+    <p class="text-[5rem]"><span id="subhanAllahFullTasbih">0</span>/<span id="subhanAllahDisplay">0</span></p>
+</div>
+    <br>
+    <div class="flex flex-wrap justify-around gap-2 text-center">
+        <button id="subhanAllahIncreBtn" class="bg-green-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 text-white">Increment</button>
+        <button id="subhanAllahDecreBtn" class="bg-red-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 text-white">Decrement</button>
+    </div>
+    <button id="subhanAllahResetBtn" class="bg-yellow-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 mt-4">Reset</button>
+</div>
+
+<!-- Alhamdulillah -->
+<div id="alhamdulillah" class="text-center h-auto w-auto  shadow-2xl rounded-[1rem] p-5">
+    <h1 class="text-[3rem] font-bold">Alhamdulillah</h1>
+    <br>
+    <div class="bg-slate-200 rounded-[1rem] shadow-inner border-4 border-gray-300">
+        <p class="text-[5rem]"><span id="alhamdulillahFullTasbih">0</span>/<span id="alhamdulillahDisplay">0</span></p>
+    </div>
+    <br>
+    <div class="flex flex-wrap justify-around gap-2 text-center">
+        <button id="alhamdulillahIncreBtn" class="bg-green-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 text-white">Increment</button>
+        <button id="alhamdulillahDecreBtn" class="bg-red-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 text-white">Decrement</button>
+    </div>
+    <button id="alhamdulillahResetBtn" class="bg-yellow-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 mt-4">Reset</button>
+</div>
+
+<!-- Allahuakbar -->
+<div id="allahuakbar" class="text-center h-auto w-auto  shadow-2xl rounded-[1rem] p-5">
+    <h1 class="text-[3rem] font-bold">Allahuakbar</h1>
+    <br>
+    <div class="bg-slate-200 rounded-[1rem] shadow-inner border-4 border-gray-300">
+        <p class="text-[5rem]"><span id="allahuakbarFullTasbih">0</span>/<span id="allahuakbarDisplay">0</span></p>
+    </div>
+    <br>
+    <div class="flex flex-wrap justify-around gap-2 text-center">
+        <button id="allahuakbarIncreBtn" class="bg-green-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 text-white">Increment</button>
+        <button id="allahuakbarDecreBtn" class="bg-red-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 text-white">Decrement</button>
+    </div>
+    <button id="allahuakbarResetBtn" class="bg-yellow-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 mt-4">Reset</button>
+</div>
+    </section>
+
+    <!-- ALL Reset -->
+    <button id="resetBtn" class="bg-yellow-500 text-[2rem] font-semibold px-4 py-2 rounded-[1rem] border-2 mt-12">Reset All Tasbih</button>
+</main>
+
+<footer class="footer items-center p-4 bg-neutral text-neutral-content flex lg:grid lg:grid-cols-1 lg:px-9">
+    <aside class="items-center grid-flow-col">
+      <img class="w-9 h-9" src="asset/tasbih.png" alt=""> 
+      <p class="lg:text-lg">Copyright © 2024 - All right reserved</p>
+    </aside> 
+    <nav class="grid-flow-col gap-4">
+        <a href="https://www.facebook.com/profile.php?id=100027606112308"  target="_blank"><img class="w-9" src="asset/Facebook.png"></a>
+
+        <a href="https://www.instagram.com/moin_khan1911?igsh=MW53ZHQ5cW95bDlvcg=="  target="_blank"><img class="w-9" src="asset/Instagram.png"></a>
+
+    </nav>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
