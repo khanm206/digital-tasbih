@@ -37,7 +37,6 @@ subhanAllahIncreBtn.addEventListener('click', function () {
     };
     subhanAllahDisplay.innerText = subhanAllahValue;
 });
-subhanAllahFullTasbih.innerText = subhanAllahFullValue;
 
 subhanAllahDecreBtn.addEventListener('click', function () {
     subhanAllahValue -= 1;
@@ -74,7 +73,7 @@ alhamdulillahIncreBtn.addEventListener('click', function () {
     };
     alhamdulillahDisplay.innerText = alhamdulillahValue;
 });
-subhanAllahFullTasbih.innerText = subhanAllahFullValue;
+
 
 alhamdulillahDecreBtn.addEventListener('click', function () {
     alhamdulillahValue -= 1;
@@ -99,7 +98,6 @@ alhamdulillahResetBtn.addEventListener('click', function () {
     alhamdulillahFullTasbih.innerText = alhamdulillahFullValue;
 });
 
-
 // Allahuakbar
 allahuakbarIncreBtn.addEventListener('click', function () {
     allahuakbarValue += 1;
@@ -111,7 +109,8 @@ allahuakbarIncreBtn.addEventListener('click', function () {
     };
     allahuakbarDisplay.innerText =  allahuakbarValue;
 });
-allahuakbarFullTasbih.innerText = allahuakbarFullValue;
+
+
 
 allahuakbarDecreBtn.addEventListener('click', function () {
     allahuakbarValue -= 1;
@@ -127,6 +126,7 @@ allahuakbarDecreBtn.addEventListener('click', function () {
     }
     allahuakbarDisplay.innerText = allahuakbarValue;
     allahuakbarFullTasbih.innerText = allahuakbarFullValue;
+
 });
 
 allahuakbarResetBtn.addEventListener('click', function () {
@@ -153,4 +153,4 @@ resetBtn.addEventListener('click', function () {
     allahuakbarDisplay.innerText = allahuakbarValue;
     allahuakbarFullValue = 0;
     allahuakbarFullTasbih.innerText = allahuakbarFullValue;
-})
+});
